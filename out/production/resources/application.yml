@@ -1,5 +1,5 @@
 spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/samplesdb?useUnicode=true&serverTimezone=Asia/Seoul
-    username: hawon
-    password: 0191
+    username: rootoj
+    password: 1234
