@@ -18,4 +18,9 @@ public class UserService {
         userDao.mappingUserRole(user.getUserId());
         return user;
     }
+
+    @Transactional
+    public User getUser(String email) {
+        return userDao.getUser(email);
+    }
 }
