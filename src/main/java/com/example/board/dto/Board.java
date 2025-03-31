@@ -14,6 +14,7 @@ public class Board {
     private int boardId;
     private String title;
     private String content;
+    private String name;
     private int userId;
     private LocalDateTime regdate;
     private int viewCnt;
