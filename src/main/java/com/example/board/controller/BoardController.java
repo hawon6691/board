@@ -38,10 +38,6 @@ public class BoardController {
             pageCount++;
         }
         int currentPage = page;
-//        System.out.println("totalCount : " + totalCount);
-//        for(Board board : list) {
-//            System.out.println(board);
-//        }
 
         model.addAttribute("list", list);
         model.addAttribute("pageCount", pageCount);
@@ -54,8 +50,11 @@ public class BoardController {
     // /board?id=2
     // /board?id=1
     @GetMapping("/board")
-    public String board(@RequestParam("boardId") int boardId, Model model)
+    public String board(@RequestParam("boardId") int boardId, HttpSession session, Model model)
     {
+        LoginInfo loginInfo = (LoginInfo)session.getAttribute("loginInfo");
+        model.addAttribute("loginInfo", loginInfo);
+
         System.out.println("boardId : " + boardId);
 
         //id에 해당하는 게시물을 읽어온다.
