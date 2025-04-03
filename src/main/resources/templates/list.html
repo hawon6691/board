@@ -59,11 +59,11 @@
                     </tbody>
                 </table>
             </div>
-            <div>
+            <div class="container">
                 <a href="/writeForm" th:if="${loginInfo != null}">글쓰기</a>
                 <span th:if="${loginInfo == null}">글쓰기</span>
             </div>
-            <div>
+            <div class="container">
                 <span th:each="n : ${#numbers.sequence(1, pageCount)}"><a th:href="@{/(page=${n})}" th:text="${n}"></a></span>
             </div>
         </div>
