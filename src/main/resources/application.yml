@@ -1,5 +1,5 @@
 spring:
   datasource:
-    url: jdbc:mysql://svc.sel4.cloudtype.app:31647/useUnicode=true&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://svc.sel4.cloudtype.app:31647/
     username: root
     password: 1234
