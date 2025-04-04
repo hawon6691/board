@@ -1,5 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://svc.sel4.cloudtype.app:31647/
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://svc.sel4.cloudtype.app:31647/samplesdb
     username: root
     password: 1234
